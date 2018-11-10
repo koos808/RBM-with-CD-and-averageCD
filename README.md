@@ -13,13 +13,13 @@
 -- 정확도와 AUC[accuracy and AUC]
 
 - 간단한 모델 설명
--- ***분류용 RBM*** 알고리즘을 만들었다.
--- ***모멘텀***을 고려한 알고리즘을 사용했다.
+-- *** 분류용 RBM *** 알고리즘을 만들었다.
+-- *** 모멘텀 ***을 고려한 알고리즘을 사용했다.
 -- 각 자료를 임의로 3등분하여 2등분은 훈련자료로 1등분은 검정자료로 사용했다.
--- ***Smote*** 기법을 사용하여 oversampling을 했다.
+-- *** Smote *** 기법을 사용하여 oversampling을 했다.
 
 ## 결과
-- 1.***not using smote***의 분류 성능이 좋다.
+- 1.*** not using smote ***의 분류 성능이 좋다.
 -- New_Thyroid data자체가 좋지 않다. class 2와 3가 너무 적어 smote를 시켰는데도 불구하고 precision이 1.00으로 나오게 된다.
 --- class 2와 3을 추가 생성할 필요가 있다. TRAIN,TEST 데이터를 나눌때 using smote와 not using smote를 비교해 보면 using smote가 적합하다.
 
